@@ -1,0 +1,289 @@
+<html dir="rtl" lang="ar" style="--btn-primary: #8b2c1d; --navbar-bg: #8b2c1d;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<titleاسامينو الموقع الاصلي| المطعم الإيطالي الأصيل</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="navbar" id="mainNavbar">
+<div class="logo">
+<h2 id="restaurantName">اسامينو الموقع الاصلي<span class="brand-tag">Italianissimo 🍝</span></h2>
+</div>
+<div class="nav-links">
+<button class="nav-btn active" data-page="home"><i class="fas fa-utensils"></i><span>المنيو</span></button>
+<button class="nav-btn" data-page="offers"><i class="fas fa-gift"></i><span>العروض</span></button>
+<button class="nav-btn" data-page="favorites"><i class="fas fa-heart"></i><span>المفضلة</span></button>
+<button class="nav-btn" data-page="orders"><i class="fas fa-check-circle"></i><span>طلباتي</span></button>
+</div>
+<div class="nav-actions">
+<div class="cart-icon" id="cartIcon" role="button" tabindex="0">
+<i class="fas fa-shopping-cart"></i>
+<span class="cart-count" id="cartCount">0</span>
+</div>
+<button class="dark-mode-toggle" id="darkModeToggle" type="button"><i class="fas fa-moon"></i></button>
+</div>
+</div>
+<div class="container">
+<div class="page active-page" id="homePage">
+<h1 class="page-title" id="welcomeMsg">🇮🇹 اسامينو الاصلي- نكهات إيطاليا الأصيلة</h1>
+<div class="menu-search-wrap">
+<i class="fas fa-search search-icon"></i>
+<input autocomplete="off" class="menu-search-input" id="menuSearch" placeholder="ابحث في المنيو..." type="search"/>
+</div>
+<div class="categories-row">
+<div class="cat-card active-cat" data-cat="pizza"><i class="fas fa-pizza-slice"></i> بيتزا</div>
+<div class="cat-card" data-cat="pasta"><i class="fas fa-utensil-spoon"></i> باستا</div>
+</div>
+<div class="items-grid" id="itemsContainer"><div class="food-card" style="cursor: default;">
+<img alt="بيتزا جبنة" class="food-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x260/f5e1c0/8b2c1d?text=%D8%A8%D9%8A%D8%AA%D8%B2%D8%A7%20%D8%AC%D8%A8%D9%86%D8%A9';" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=360&amp;h=220&amp;fit=crop&amp;q=75&amp;auto=format"/>
+<div class="food-info">
+<div class="food-header">
+<div class="food-title">🍕 بيتزا جبنة</div>
+<button class="favorite-btn" data-id="1" title="إضافة للمفضلة">
+<i class="fas fa-heart"></i>
+</button>
+</div>
+<div class="rating-section">
+<div class="stars">
+<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+</div>
+<span class="rating-text" data-id="1" style="cursor:pointer;">(0 تقييم)</span>
+</div>
+<div class="food-price">💰 150 ج.م</div>
+<div style="display: flex; gap: 8px; margin-top: 5px;">
+<button class="add-btn" data-id="1" style="flex: 2;">
+<i class="fas fa-cart-plus"></i> أضف
+        </button>
+<button class="details-btn" data-id="1" style="flex: 1;">
+<i class="fas fa-info-circle"></i> تفاصيل
+        </button>
+</div>
+</div>
+</div><div class="food-card" style="cursor: default;">
+<img alt="بيتزا إيطاليانا" class="food-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x260/f5e1c0/8b2c1d?text=%D8%A8%D9%8A%D8%AA%D8%B2%D8%A7%20%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7%D9%86%D8%A7';" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=360&amp;h=220&amp;fit=crop&amp;q=75&amp;auto=format"/>
+<div class="food-info">
+<div class="food-header">
+<div class="food-title">🍕 بيتزا إيطاليانا</div>
+<button class="favorite-btn" data-id="7" title="إضافة للمفضلة">
+<i class="fas fa-heart"></i>
+</button>
+</div>
+<div class="rating-section">
+<div class="stars">
+<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+</div>
+<span class="rating-text" data-id="7" style="cursor:pointer;">(0 تقييم)</span>
+</div>
+<div class="food-price">💰 300 ج.م</div>
+<div style="display: flex; gap: 8px; margin-top: 5px;">
+<button class="add-btn" data-id="7" style="flex: 2;">
+<i class="fas fa-cart-plus"></i> أضف
+        </button>
+<button class="details-btn" data-id="7" style="flex: 1;">
+<i class="fas fa-info-circle"></i> تفاصيل
+        </button>
+</div>
+</div>
+</div><div class="food-card" style="cursor: default;">
+<img alt="بيتزا مارينارا" class="food-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x260/f5e1c0/8b2c1d?text=%D8%A8%D9%8A%D8%AA%D8%B2%D8%A7%20%D9%85%D8%A7%D8%B1%D9%8A%D9%86%D8%A7%D8%B1%D8%A7';" src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=360&amp;h=220&amp;fit=crop&amp;q=75&amp;auto=format"/>
+<div class="food-info">
+<div class="food-header">
+<div class="food-title">🍕 بيتزا مارينارا</div>
+<button class="favorite-btn" data-id="8" title="إضافة للمفضلة">
+<i class="fas fa-heart"></i>
+</button>
+</div>
+<div class="rating-section">
+<div class="stars">
+<i class="fas fa-star star active"></i><i class="fas fa-star star active"></i><i class="fas fa-star star active"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+</div>
+<span class="rating-text" data-id="8" style="cursor:pointer;">(2 تقييم)</span>
+</div>
+<div class="food-price">💰 200 ج.م</div>
+<div style="display: flex; gap: 8px; margin-top: 5px;">
+<button class="add-btn" data-id="8" style="flex: 2;">
+<i class="fas fa-cart-plus"></i> أضف
+        </button>
+<button class="details-btn" data-id="8" style="flex: 1;">
+<i class="fas fa-info-circle"></i> تفاصيل
+        </button>
+</div>
+</div>
+</div><div class="food-card" style="cursor: default;">
+<img alt="بيتزا فطر" class="food-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x260/f5e1c0/8b2c1d?text=%D8%A8%D9%8A%D8%AA%D8%B2%D8%A7%20%D9%81%D8%B7%D8%B1';" src="https://images.unsplash.com/photo-1717883235373-ef10b2a745a3?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+<div class="food-info">
+<div class="food-header">
+<div class="food-title">🍕 بيتزا فطر</div>
+<button class="favorite-btn" data-id="12" title="إضافة للمفضلة">
+<i class="fas fa-heart"></i>
+</button>
+</div>
+<div class="rating-section">
+<div class="stars">
+<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+</div>
+<span class="rating-text" data-id="12" style="cursor:pointer;">(0 تقييم)</span>
+</div>
+<div class="food-price">💰 220 ج.م</div>
+<div style="display: flex; gap: 8px; margin-top: 5px;">
+<button class="add-btn" data-id="12" style="flex: 2;">
+<i class="fas fa-cart-plus"></i> أضف
+        </button>
+<button class="details-btn" data-id="12" style="flex: 1;">
+<i class="fas fa-info-circle"></i> تفاصيل
+        </button>
+</div>
+</div>
+</div><div class="food-card" style="cursor: default;">
+<img alt="بيتزا ببروني" class="food-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x260/f5e1c0/8b2c1d?text=%D8%A8%D9%8A%D8%AA%D8%B2%D8%A7%20%D8%A8%D8%A8%D8%B1%D9%88%D9%86%D9%8A';" src="https://plus.unsplash.com/premium_photo-1733259709671-9dbf22bf02cc?q=80&amp;w=1160&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=%3D%3D"/>
+<div class="food-info">
+<div class="food-header">
+<div class="food-title">🍕 بيتزا ببروني</div>
+<button class="favorite-btn" data-id="21" title="إضافة للمفضلة">
+<i class="fas fa-heart"></i>
+</button>
+</div>
+<div class="rating-section">
+<div class="stars">
+<i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+</div>
+<span class="rating-text" data-id="21" style="cursor:pointer;">(0 تقييم)</span>
+</div>
+<div class="food-price">💰 250 ج.م</div>
+<div style="display: flex; gap: 8px; margin-top: 5px;">
+<button class="add-btn" data-id="21" style="flex: 2;">
+<i class="fas fa-cart-plus"></i> أضف
+        </button>
+<button class="details-btn" data-id="21" style="flex: 1;">
+<i class="fas fa-info-circle"></i> تفاصيل
+        </button>
+</div>
+</div>
+</div></div>
+</div>
+<div class="page" id="offersPage">
+<h2 class="page-title"><i class="fas fa-fire"></i> عروض اسامينوالحارقة <i class="fas fa-fire"></i></h2>
+<div class="offers-grid" id="offersContainer"><div class="offer-card">
+<div class="offer-title">🎁  عرض المراكمين</div>
+<div class="offer-desc">بيتزا ببروني × 2 = 400 ج.م (كان 500 ج.م)</div>
+<span class="highlight">اطلب اثنين ببروني وخد يوم بونص قبل الامتحانات وخصم 20% 😘</span>
+<br/><br/>
+<button class="add-btn" style="max-width:200px;"><i class="fas fa-cart-plus"></i> أضف العرض للسلة</button>
+</div><div class="offer-card">
+<div class="offer-title">🎁 عرض الساقطين</div>
+<div class="offer-desc">بيتزا جبنة × 2 = 350 ج.م (كان 300 ج.م)</div>
+<span class="highlight">خصم 0% يا فاشل</span>
+<br/><br/>
+<button class="add-btn" style="max-width:200px;"><i class="fas fa-cart-plus"></i> أضف العرض للسلة</button>
+</div></div>
+</div>
+<div class="page" id="favoritesPage">
+<h2 class="page-title"><i class="fas fa-heart"></i> قائمة المفضلة <i class="fas fa-heart"></i></h2>
+<div class="items-grid" id="favoritesContainer"></div>
+</div>
+<div class="page" id="ordersPage">
+<h2 class="page-title"><i class="fas fa-history"></i> عمليات الشراء المكتملة</h2>
+<div class="orders-actions">
+<button class="clear-orders-btn" id="clearAllOrdersBtn"><i class="fas fa-trash-alt"></i> حذف سجل الطلبات بالكامل</button>
+</div>
+<div class="orders-list" id="completedOrdersList"><div class="empty-state"><i class="fas fa-receipt"></i><br/>لا توجد طلبات مكتملة بعد</div></div>
+</div>
+<!-- صفحة تفاصيل المنتج -->
+<div class="page" id="productDetailsPage">
+<div class="details-header">
+<button class="back-btn" id="backToHomeBtn"><i class="fas fa-arrow-right"></i> العودة للمنيو</button>
+</div>
+<div class="product-details-container" id="productDetailsContent">
+<!-- هنا هتتحمل بيانات المنتج -->
+</div>
+</div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+<div class="cart-header">
+<h3><i class="fas fa-shopping-bag"></i> سلة مشترياتك</h3>
+<button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+</div>
+<div class="cart-items" id="cartItemsList"><div class="empty-state"><i class="fas fa-shopping-basket"></i><br/>سلة فارغة</div></div>
+<div class="total-price" id="cartTotal">الإجمالي: 0 ج.م</div>
+<button class="confirm-order-btn" id="confirmOrderBtn"><i class="fas fa-check-circle"></i> تأكيد الطلب</button>
+<button class="clear-cart" id="clearCartBtn"><i class="fas fa-trash-alt"></i> تفريغ السلة</button>
+</div>
+<!-- Modal تأكيد الطلب -->
+<div class="modal" id="orderModal">
+<div class="modal-content">
+<div class="modal-header">
+<h3><i class="fas fa-clipboard-list"></i> تفاصيل الطلب</h3>
+<span class="modal-close" id="closeOrderModalBtn">×</span>
+</div>
+<div class="modal-body">
+<div class="form-group">
+<label><i class="fas fa-user"></i> الاسم الكامل</label>
+<input class="modal-input" id="customerName" placeholder="أدخل اسمك" required="" type="text"/>
+</div>
+<div class="form-group">
+<label><i class="fas fa-phone"></i> رقم الهاتف</label>
+<input class="modal-input" id="customerPhone" inputmode="numeric" pattern="[0-9]*" placeholder="أدخل رقم هاتفك" required="" type="tel"/>
+</div>
+<!-- المحافظة -->
+<div class="form-group">
+<label><i class="fas fa-map-marker-alt"></i> المحافظة</label>
+<select class="modal-input" id="governorate" required=""><option value="">-- اختر المحافظة --</option><option value="أسوان">أسوان</option><option value="أسيوط">أسيوط</option><option value="الأقصر">الأقصر</option><option value="الإسكندرية">الإسكندرية</option><option value="الإسماعيلية">الإسماعيلية</option><option value="البحر الأحمر">البحر الأحمر</option><option value="البحيرة">البحيرة</option><option value="الجيزة">الجيزة</option><option value="الدقهلية">الدقهلية</option><option value="السويس">السويس</option><option value="الشرقية">الشرقية</option><option value="الغربية">الغربية</option><option value="الفيوم">الفيوم</option><option value="القاهرة">القاهرة</option><option value="القليوبية">القليوبية</option><option value="المنوفية">المنوفية</option><option value="المنيا">المنيا</option><option value="الوادي الجديد">الوادي الجديد</option><option value="بني سويف">بني سويف</option><option value="بورسعيد">بورسعيد</option><option value="جنوب سيناء">جنوب سيناء</option><option value="دمياط">دمياط</option><option value="سوهاج">سوهاج</option><option value="شمال سيناء">شمال سيناء</option><option value="قنا">قنا</option><option value="كفر الشيخ">كفر الشيخ</option><option value="مطروح">مطروح</option></select>
+</div>
+<!-- الإدارة / المدينة -->
+<div class="form-group">
+<label><i class="fas fa-city"></i> الإدارة / المدينة</label>
+<select class="modal-input" disabled="" id="city" required="">
+<option value="">-- اختر الإدارة أولاً --</option>
+</select>
+</div>
+<!-- تفاصيل العنوان -->
+<div class="form-group">
+<label><i class="fas fa-location-dot"></i> تفاصيل العنوان (الشارع، رقم العمارة، ...)</label>
+<textarea class="modal-input" id="customerAddress" placeholder="مثال: شارع النيل، عمارة 5، شقة 12" required="" rows="3"></textarea>
+</div>
+<div class="form-group">
+<label><i class="fas fa-credit-card"></i> طريقة الدفع</label>
+<select class="modal-input" id="paymentMethod">
+<option value="كاش عند الاستلام">💵 كاش عند الاستلام</option>
+<option value="بطاقة ائتمان">💳 بطاقة ائتمان</option>
+<option value="محفظة إلكترونية">📱 محفظة إلكترونية</option>
+</select>
+</div>
+</div>
+<div class="modal-footer">
+<button class="send-whatsapp-btn" id="sendWhatsAppBtn"><i class="fab fa-whatsapp"></i> إرسال البيانات عبر واتساب</button>
+</div>
+</div>
+</div>
+<!-- مودال التأكيد المخصصة -->
+<div class="custom-confirm" id="customConfirmModal">
+<div class="custom-confirm-content">
+<i class="fas fa-question-circle"></i>
+<p id="confirmMessage">هل أنت متأكد؟</p>
+<div class="custom-confirm-buttons">
+<button class="confirm-yes" id="confirmYesBtn"><i class="fas fa-check"></i> نعم</button>
+<button class="confirm-no" id="confirmNoBtn"><i class="fas fa-times"></i> لا</button>
+</div>
+</div>
+</div>
+<footer id="mainFooter">
+<p id="footerText">© 2025 اسامينو الموقع الاصلي| 201225899225</p>
+<p class="footer-meta">
+<span id="restaurantAddress">📍 الاسكندرية-المعمورة البلد</span> · 
+    <span id="workingHours">🕰 مفتوح يومياً ١٢ ظهراً - ١٢ ليلاً</span>
+</p>
+<div>
+<span class="admin-link" id="adminLoginBtn">🔧</span>
+</div>
+</footer>
+<button class="toggle-navbar-fab" id="toggleNavbarFab" type="button"><i class="fas fa-chevron-up"></i></button>
+<audio id="successSound" preload="auto">
+<source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg"/>
+</audio>
+<script src="script.js" type="module"></script>
+</body></html>
