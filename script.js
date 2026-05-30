@@ -99,7 +99,7 @@ const MENU_IMAGE_DEFAULTS = {
 // البيانات الافتراضية
 // =====================================================
 let restaurantConfig = {
-  name: "يوسيفونو",
+  name: "اسامينو",
   phone: "201225899225",
   deliveryNote: "أكتب عنوانك بالكامل",
   primaryColor: "#c0392b",
